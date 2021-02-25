@@ -3,4 +3,7 @@
     <Name>Prometheus</Name>
     <Framework>10.0.x</Framework>
     <ModuleRequired Version="*">Net::Prometheus</ModuleRequired>
+    <Filelist>
+        <File Location="bin/cgi-bin/metrics.pl" Permission="755"></File>
+    </Filelist>
 </otrs_package>
