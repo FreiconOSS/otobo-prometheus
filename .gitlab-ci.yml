@@ -1,0 +1,3 @@
+include:
+  project: 'OTRS/template'
+  file: 'opm_gitlab-ci.yml'

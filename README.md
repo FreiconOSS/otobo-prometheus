@@ -1,7 +1,7 @@
 # WIP: Prometheus package for OTOBO
 
 ## example
-```
+```shell
 # HELP otobo_info Information about the otobo environment
 # TYPE otobo_info counter
 otobo_info{version="10.0.6"} 1
@@ -58,4 +58,4 @@ process_start_time_seconds 1614273393.51
 # HELP process_virtual_memory_bytes Virtual memory size in bytes
 # TYPE process_virtual_memory_bytes gauge
 process_virtual_memory_bytes 1894674432
-``
+```
