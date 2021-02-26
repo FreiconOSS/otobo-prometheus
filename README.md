@@ -23,9 +23,6 @@ plugins kann be disabled via sysconfig
 
 ## example
 ```shell
-# HELP otobo_agent_skin_usage 
-# TYPE otobo_agent_skin_usage gauge
-otobo_agent_skin_usage{skin="default",default="1"} 1
 # HELP otobo_agent_theme_usage 
 # TYPE otobo_agent_theme_usage gauge
 # HELP otobo_article_count 
@@ -34,7 +31,7 @@ otobo_article_count{channel="Email",sender="customer"} 1
 otobo_article_count{channel="Phone",sender="customer"} 3
 # HELP otobo_communication_stats 
 # TYPE otobo_communication_stats gauge
-otobo_communication_stats{direction="Outgoing",status="Failed"} 733
+otobo_communication_stats{direction="Outgoing",status="Failed"} 834
 otobo_communication_stats{direction="Outgoing",status="Processing"} 7
 # HELP otobo_database_record_count 
 # TYPE otobo_database_record_count gauge
@@ -74,6 +71,24 @@ otobo_package_installed{name="FREICON-Skin",version="10.0.1",vendor="FREICON Gmb
 otobo_package_installed{name="Idoit-Connector",version="10.1.0",vendor="FREICON GmbH & Co. KG"} 1
 otobo_package_installed{name="TEMPLATE-Skin",version="10.0.1.3.g8c01a0e",vendor="FREICON GmbH & Co. KG"} 1
 otobo_package_installed{name="TextModules",version="10.0.2.1.g5b31148",vendor="FREICON GmbH & Co. KG"} 1
+# HELP otobo_prometheus_plugin_execute_took_seconds 
+# TYPE otobo_prometheus_plugin_execute_took_seconds gauge
+otobo_prometheus_plugin_execute_took_seconds{name="Article"} 0.000622
+otobo_prometheus_plugin_execute_took_seconds{name="CommunicationStats"} 0.003897
+otobo_prometheus_plugin_execute_took_seconds{name="DatabaseRecords"} 0.011897
+otobo_prometheus_plugin_execute_took_seconds{name="MailQueue"} 0.002766
+otobo_prometheus_plugin_execute_took_seconds{name="Maintenance"} 0.001729
+otobo_prometheus_plugin_execute_took_seconds{name="OTOBO"} 0.000354
+otobo_prometheus_plugin_execute_took_seconds{name="Packages"} 0.000732
+otobo_prometheus_plugin_execute_took_seconds{name="Perl"} 7.7e-05
+otobo_prometheus_plugin_execute_took_seconds{name="Session"} 0.004192
+otobo_prometheus_plugin_execute_took_seconds{name="SysConfig"} 0.028498
+otobo_prometheus_plugin_execute_took_seconds{name="SystemID"} 0.000272
+otobo_prometheus_plugin_execute_took_seconds{name="Themes"} 0.000588
+otobo_prometheus_plugin_execute_took_seconds{name="TicketStats"} 0.001336
+otobo_prometheus_plugin_execute_took_seconds{name="TicketsWithInvalidUser"} 0.000465
+otobo_prometheus_plugin_execute_took_seconds{name="TimeAccounted"} 0.00071
+otobo_prometheus_plugin_execute_took_seconds{name="TimeBetweenFirstAndLastTicket"} 0.002063
 # HELP otobo_seconds_between_first_and_last_ticket 
 # TYPE otobo_seconds_between_first_and_last_ticket gauge
 otobo_seconds_between_first_and_last_ticket 109
@@ -87,10 +102,10 @@ otobo_sessions_unique_count{user_type="Customer"} 0
 otobo_sessions_unique_count{user_type="User"} 1
 # HELP otobo_sysconfig_default_count 
 # TYPE otobo_sysconfig_default_count gauge
-otobo_sysconfig_default_count 2158
+otobo_sysconfig_default_count 2174
 # HELP otobo_sysconfig_deployment 
 # TYPE otobo_sysconfig_deployment counter
-otobo_sysconfig_deployment 9
+otobo_sysconfig_deployment 12
 # HELP otobo_sysconfig_modified_count 
 # TYPE otobo_sysconfig_modified_count gauge
 otobo_sysconfig_modified_count 1
@@ -115,13 +130,13 @@ otobo_time_accounted_total 6
 perl_info{version="5.030000"} 1
 # HELP process_cpu_seconds_total Total user and system CPU time spent in seconds
 # TYPE process_cpu_seconds_total counter
-process_cpu_seconds_total 1.24
+process_cpu_seconds_total 0.89
 # HELP process_cpu_system_seconds_total Total system CPU time spent in seconds
 # TYPE process_cpu_system_seconds_total counter
-process_cpu_system_seconds_total 0.22
+process_cpu_system_seconds_total 0.16
 # HELP process_cpu_user_seconds_total Total user CPU time spent in seconds
 # TYPE process_cpu_user_seconds_total counter
-process_cpu_user_seconds_total 1.02
+process_cpu_user_seconds_total 0.73
 # HELP process_max_fds Maximum number of allowed file handles
 # TYPE process_max_fds gauge
 process_max_fds 8192
@@ -130,12 +145,11 @@ process_max_fds 8192
 process_open_fds 18
 # HELP process_resident_memory_bytes Resident memory size in bytes
 # TYPE process_resident_memory_bytes gauge
-process_resident_memory_bytes 179404800
+process_resident_memory_bytes 169791488
 # HELP process_start_time_seconds Unix epoch time the process started at
 # TYPE process_start_time_seconds gauge
-process_start_time_seconds 1614336785.64
+process_start_time_seconds 1614344832.75
 # HELP process_virtual_memory_bytes Virtual memory size in bytes
 # TYPE process_virtual_memory_bytes gauge
-process_virtual_memory_bytes 1894981632
-
+process_virtual_memory_bytes 1895075840
 ```
