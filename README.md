@@ -2,9 +2,50 @@
 
 ## example
 ```shell
+# HELP otobo_agent_skin_usage 
+# TYPE otobo_agent_skin_usage gauge
+otobo_agent_skin_usage{skin="default",default="1"} 1
+# HELP otobo_agent_theme_usage 
+# TYPE otobo_agent_theme_usage gauge
+# HELP otobo_article_count 
+# TYPE otobo_article_count counter
+otobo_article_count{channel="Email",sender="customer"} 1
+otobo_article_count{channel="Phone",sender="customer"} 3
+# HELP otobo_communication_stats 
+# TYPE otobo_communication_stats gauge
+otobo_communication_stats{direction="Outgoing",status="Failed"} 733
+otobo_communication_stats{direction="Outgoing",status="Processing"} 7
+# HELP otobo_database_record_count 
+# TYPE otobo_database_record_count gauge
+otobo_database_record_count{type="AgentCount"} 1
+otobo_database_record_count{type="ArticleCount"} 4
+otobo_database_record_count{type="AttachmentCountDBNonHTML"} 0
+otobo_database_record_count{type="DistinctTicketCustomerCount"} 0
+otobo_database_record_count{type="DynamicFieldCount"} 2
+otobo_database_record_count{type="DynamicFieldValueCount"} 0
+otobo_database_record_count{type="GroupCount"} 3
+otobo_database_record_count{type="InvalidDynamicFieldCount"} 0
+otobo_database_record_count{type="InvalidDynamicFieldValueCount"} 0
+otobo_database_record_count{type="ProcessCount"} 0
+otobo_database_record_count{type="ProcessTickets"} 0
+otobo_database_record_count{type="QueueCount"} 4
+otobo_database_record_count{type="RoleCount"} 0
+otobo_database_record_count{type="ServiceCount"} 0
+otobo_database_record_count{type="TicketCount"} 4
+otobo_database_record_count{type="TicketHistoryCount"} 9
+otobo_database_record_count{type="WebserviceCount"} 1
 # HELP otobo_info Information about the otobo environment
 # TYPE otobo_info counter
-otobo_info{version="10.0.6"} 1
+otobo_info{version="10.0.6",lang="de",tz="UTC",org="Example Company"} 1
+# HELP otobo_locked_ticked_with_invalid_user 
+# TYPE otobo_locked_ticked_with_invalid_user gauge
+otobo_locked_ticked_with_invalid_user 0
+# HELP otobo_mail_queue_count 
+# TYPE otobo_mail_queue_count counter
+otobo_mail_queue_count 7
+# HELP otobo_maintenance_active 
+# TYPE otobo_maintenance_active gauge
+otobo_maintenance_active 1
 # HELP otobo_package_installed 
 # TYPE otobo_package_installed counter
 otobo_package_installed{name="DynamicField_SameRow",version="10.0.0.1.g4b412ab",vendor="FREICON GmbH & Co. KG"} 1
@@ -12,6 +53,17 @@ otobo_package_installed{name="FREICON-Skin",version="10.0.1",vendor="FREICON Gmb
 otobo_package_installed{name="Idoit-Connector",version="10.1.0",vendor="FREICON GmbH & Co. KG"} 1
 otobo_package_installed{name="TEMPLATE-Skin",version="10.0.1.3.g8c01a0e",vendor="FREICON GmbH & Co. KG"} 1
 otobo_package_installed{name="TextModules",version="10.0.2.1.g5b31148",vendor="FREICON GmbH & Co. KG"} 1
+# HELP otobo_seconds_between_first_and_last_ticket 
+# TYPE otobo_seconds_between_first_and_last_ticket gauge
+otobo_seconds_between_first_and_last_ticket 109
+# HELP otobo_sessions_count 
+# TYPE otobo_sessions_count gauge
+otobo_sessions_count{user_type="Customer"} 0
+otobo_sessions_count{user_type="User"} 1
+# HELP otobo_sessions_unique_count 
+# TYPE otobo_sessions_unique_count gauge
+otobo_sessions_unique_count{user_type="Customer"} 0
+otobo_sessions_unique_count{user_type="User"} 1
 # HELP otobo_sysconfig_default_count 
 # TYPE otobo_sysconfig_default_count gauge
 otobo_sysconfig_default_count 2158
@@ -21,6 +73,9 @@ otobo_sysconfig_deployment 9
 # HELP otobo_sysconfig_modified_count 
 # TYPE otobo_sysconfig_modified_count gauge
 otobo_sysconfig_modified_count 1
+# HELP otobo_system_id 
+# TYPE otobo_system_id gauge
+otobo_system_id 10
 # HELP otobo_ticket_count 
 # TYPE otobo_ticket_count gauge
 otobo_ticket_count{queue="Misc",ticket_type="null",service="null",ticket_priority="4 high",ticket_state="open"} 2
@@ -31,18 +86,21 @@ otobo_ticket_count{queue="Raw",ticket_type="Unclassified",service="null",ticket_
 otobo_ticket_history_count{type="NewTicket"} 4
 otobo_ticket_history_count{type="PhoneCallCustomer"} 3
 otobo_ticket_history_count{type="TimeAccounting"} 2
+# HELP otobo_time_accounted_total 
+# TYPE otobo_time_accounted_total counter
+otobo_time_accounted_total 6
 # HELP perl_info Information about the perl environment
 # TYPE perl_info counter
 perl_info{version="5.030000"} 1
 # HELP process_cpu_seconds_total Total user and system CPU time spent in seconds
 # TYPE process_cpu_seconds_total counter
-process_cpu_seconds_total 0.71
+process_cpu_seconds_total 1.24
 # HELP process_cpu_system_seconds_total Total system CPU time spent in seconds
 # TYPE process_cpu_system_seconds_total counter
-process_cpu_system_seconds_total 0.13
+process_cpu_system_seconds_total 0.22
 # HELP process_cpu_user_seconds_total Total user CPU time spent in seconds
 # TYPE process_cpu_user_seconds_total counter
-process_cpu_user_seconds_total 0.58
+process_cpu_user_seconds_total 1.02
 # HELP process_max_fds Maximum number of allowed file handles
 # TYPE process_max_fds gauge
 process_max_fds 8192
@@ -51,11 +109,12 @@ process_max_fds 8192
 process_open_fds 18
 # HELP process_resident_memory_bytes Resident memory size in bytes
 # TYPE process_resident_memory_bytes gauge
-process_resident_memory_bytes 163938304
+process_resident_memory_bytes 179404800
 # HELP process_start_time_seconds Unix epoch time the process started at
 # TYPE process_start_time_seconds gauge
-process_start_time_seconds 1614273393.51
+process_start_time_seconds 1614336785.64
 # HELP process_virtual_memory_bytes Virtual memory size in bytes
 # TYPE process_virtual_memory_bytes gauge
-process_virtual_memory_bytes 1894674432
+process_virtual_memory_bytes 1894981632
+
 ```
