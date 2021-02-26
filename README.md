@@ -19,7 +19,7 @@ Descriptions are missing everywhere!  :eyes:
 - TimeAccounted
 - TimeBetweenFirstAndLastTicket
 
-plugins kann be disabled via sysconfig
+plugins can be disabled via sysconfig
 
 ## example
 ```shell
