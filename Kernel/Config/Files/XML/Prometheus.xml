@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otobo_config version="2.0" init="Changes">
+    <Setting Name="Prometheus::Plugin###Packages" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Packages</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###MailQueue" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::MailQueue</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###CommunicationStats" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::CommunicationStats</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###Article" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Article</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###DatabaseRecords" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::DatabaseRecords</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###Maintenance" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Maintenance</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###OTOBO" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::OTOBO</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###Session" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Session</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###Perl" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Perl</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###SysConfig" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::SysConfig</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###SystemID" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::SystemID</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###Themes" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::Themes</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###TicketStats" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::TicketStats</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###TicketsWithInvalidUser" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::TicketsWithInvalidUser</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###TimeAccounted" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::TimeAccounted</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Prometheus::Plugin###TimeBetweenFirstAndLastTicket" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation></Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PrometheusDataCollector::Plugin::TimeBetweenFirstAndLastTicket</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otobo_config>
