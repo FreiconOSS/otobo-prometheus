@@ -1,4 +1,5 @@
 # WIP: Prometheus package for OTOBO
+Descriptions are missing everywhere!  :eyes:
 ## Plugins
 - Article
 - CommunicationStats
