@@ -1,4 +1,24 @@
 # WIP: Prometheus package for OTOBO
+## Plugins
+- Article
+- CommunicationStats
+- DatabaseRecords
+- MailQueue
+- Maintenance
+- OTOBO
+- Packages
+- Perl
+- Session
+- Skin
+- SysConfig
+- SystemID
+- Themes
+- TicketStats
+- TicketsWithInvalidUser
+- TimeAccounted
+- TimeBetweenFirstAndLastTicket
+
+plugins kann be disabled via sysconfig
 
 ## example
 ```shell
