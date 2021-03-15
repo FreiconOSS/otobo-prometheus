@@ -18,6 +18,7 @@ Descriptions are missing everywhere!  :eyes:
 - TicketsWithInvalidUser
 - TimeAccounted
 - TimeBetweenFirstAndLastTicket
+- WebRequests
 
 plugins can be disabled via sysconfig
 
@@ -152,5 +153,9 @@ process_start_time_seconds 1614344832.75
 # HELP process_virtual_memory_bytes Virtual memory size in bytes
 # TYPE process_virtual_memory_bytes gauge
 process_virtual_memory_bytes 1895075840
+web_request_count{interface="Agent",action="AdminSystemConfiguration",subaction="AJAXNavigationTree"} 1
+web_request_count{interface="Agent",action="AdminSystemConfigurationGroup",subaction="CheckSettings"} 4
+web_request_count{interface="Agent",action="AdminSystemConfigurationGroup",subaction="null"} 1
+web_request_count{interface="Agent",action="null",subaction="null"} 4
 ```
 
