@@ -12,8 +12,6 @@ our @ObjectDependencies = (
     'Kernel::System::Log',
 );
 
-
-
 sub new {
     my ( $Type, %Param ) = @_;
 
@@ -24,7 +22,6 @@ sub new {
     $Self->{client} = Net::Prometheus->new;
     return $Self;
 }
-
 
 sub new_gauge {
     my ( $Self, %Param ) = @_;

@@ -12,8 +12,6 @@ our @ObjectDependencies = (
     'Kernel::System::Log',
 );
 
-
-
 sub new {
     my ($Type, %Param) = @_;
 
@@ -68,7 +66,6 @@ sub Incr {
 
     return 1;
 }
-
 
 sub Get {
     my ($Self, %Param) = @_;
@@ -154,6 +151,5 @@ sub _Connect {
 
     return 1;
 }
-
 
 1;
